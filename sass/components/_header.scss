@@ -1,0 +1,15 @@
+.header {
+  background-color: var(--main-title-color);
+  border-bottom: 1px solid var(--border-color);
+}
+.header__logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header__logo-item {
+  color: var(--logo-title-color);
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}

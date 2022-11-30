@@ -1,0 +1,36 @@
+.address__item {
+  font-style: normal;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__auth {
+  font-style: normal;
+  line-height: calc(16 / 14);
+  color: var(--auth-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer__nav .footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__address {
+  margin-right: 90px;
+}
+.footer__contacts-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer__contacts-icon {
+  fill: #fff;
+}

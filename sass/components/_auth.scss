@@ -1,0 +1,34 @@
+.auth {
+  display: flex;
+  margin-left: auto;
+}
+.auth .auth__item + .auth__item {
+  margin-left: 50px;
+}
+.auth__nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: var(--auth-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  &:hover,
+  &:focus {
+  color: var(--accent-color);
+}
+}
+
+.auth__icon {
+  fill: currentColor;
+}
