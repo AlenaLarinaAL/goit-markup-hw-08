@@ -3,8 +3,6 @@
 @import './utils/visually-hidden';
 @import './utils/socials';
 
-
-
 // base styles 
 @import './base/base';
 @import './base/reset';
@@ -31,11 +29,14 @@
 @import './components/clients';
      //  footer
 @import './components/footer';
-@import './components/footer-mailing';
 @import './components/footer-address';
+@import './components/footer-contacts';
+@import './components/footer-mailing';
 @import './components/footer-logo';
      //  portfolio
 @import './components/portfolio-btn-set';
 @import './components/portfolio-card-set';
     //  modal window
 @import './components/modal';
+    //  mobile menu
+@import './components/menu';

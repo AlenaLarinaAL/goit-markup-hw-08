@@ -1,12 +1,29 @@
 .clients {
+  @extend %section;
+}
+.clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 30px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 }
 .clients__item {
-  width: 170px;
+  width: calc((100vw - (2 * 30px)) / 2);
   height: 92px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
 .clients__link {
   display: flex;
@@ -24,9 +41,9 @@
 
   &:hover,
   &:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
-}
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
 .clients__icon {

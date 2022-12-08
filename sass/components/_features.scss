@@ -1,17 +1,57 @@
 .features {
-  display: flex;
-  gap: 30px;
+  @extend %section;
 }
 .features__list {
-  width: 270px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
 }
-.features__text {
-  margin: 0;
-  line-height: calc(24 / 14);
-  color: var(--description-color);
+.features__item {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
-.features__list::before {
+.features__item:nth-child(1)::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+.features__item:nth-child(2)::before {
+  background-image: url(../images/icon/clock.svg);
+}
+.features__item:nth-child(3)::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+.features__item:nth-child(4)::before {
+  background-image: url(../images/icon/astronaut.svg);
+}
+
+.features__item::before {
   display: block;
   content: "";
   height: 120px;
@@ -21,26 +61,26 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.features__list:nth-child(1)::before {
-  background-image: url(../images/icon/antenna.svg);
-}
-.features__list:nth-child(2)::before {
-  background-image: url(../images/icon/clock.svg);
-}
-.features__list:nth-child(3)::before {
-  background-image: url(../images/icon/diagram.svg);
-}
-.features__list:nth-child(4)::before {
-  background-image: url(../images/icon/astronaut.svg);
-}
+
 .features__title {
   margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 
   color: var(--secondary-title-color);
+
+  @media screen and(min-width:768px){
+    text-align: start;
+  }
+}
+
+.features__text {
+  margin: 0;
+  line-height: calc(24 / 14);
+  color: var(--description-color);
 }

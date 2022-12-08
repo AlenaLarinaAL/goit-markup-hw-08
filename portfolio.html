@@ -21,8 +21,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- Custom style  -->
-    <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <!-- header  -->
@@ -67,11 +67,26 @@
             >
           </li>
         </ul>
+        <button
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu__mobile-icon"
+            width="40"
+            height="40"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <use href="./images/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- Portfolio  -->
-      <section class="section">
+      <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="portfolio__btn-list list">
@@ -95,12 +110,42 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/tech-img.jpg"
-                    alt="Приклад сайту"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img1_desk@1x.webp 1x,
+                        ./images/portfolio/img1_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img1_tab@1x.webp 1x,
+                        ./images/portfolio/img1_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img1_mob@1x.webp 1x,
+                        ./images/portfolio/img1_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/1-img.jpg"
+                      alt="Приклад сайту"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -119,12 +164,42 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/poster-img.jpg"
-                    alt="Приклад дизайну постера"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img2_desk@1x.webp 1x,
+                        ./images/portfolio/img2_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img2_tab@1x.webp 1x,
+                        ./images/portfolio/img2_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img2_mob@1x.webp 1x,
+                        ./images/portfolio/img2_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/2-img.jpg"
+                      alt="Приклад дизайну постера"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -145,12 +220,43 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/rest-img.jpg"
-                    alt="Лого морського ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img3_desk@1x.webp 1x,
+                        ./images/portfolio/img3_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img3_tab@1x.webp 1x,
+                        ./images/portfolio/img3_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img3_mob@1x.webp 1x,
+                        ./images/portfolio/img3_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+
+                    <img
+                      src="./images/portfolio/3-img.jpg"
+                      alt="Лого морського ресторану"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -169,12 +275,42 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/headphone-img.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img4_desk@1x.webp 1x,
+                        ./images/portfolio/img4_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img4_tab@1x.webp 1x,
+                        ./images/portfolio/img4_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img4_mob@1x.webp 1x,
+                        ./images/portfolio/img4_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/4-img.jpg"
+                      alt="Навушники"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -193,12 +329,41 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/boxes-img.jpg"
-                    alt="Коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img5_desk@1x.webp 1x,
+                        ./images/portfolio/img5_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img5_tab@1x.webp 1x,
+                        ./images/portfolio/img5_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img5_mob@1x.webp 1x,
+                        ./images/portfolio/img5_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/5-img.jpg"
+                      alt="Коробки"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -217,12 +382,42 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/website-img.jpg"
-                    alt="Приклад веб-сайту"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img6_desk@1x.webp 1x,
+                        ./images/portfolio/img6_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img6_tab@1x.webp 1x,
+                        ./images/portfolio/img6_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img6_mob@1x.webp 1x,
+                        ./images/portfolio/img6_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/6-img.jpg"
+                      alt="Приклад веб-сайту"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -241,12 +436,42 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/edition-img.jpg"
-                    alt="Дизанерське видання"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img7_desk@1x.webp 1x,
+                        ./images/portfolio/img7_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img7_tab@1x.webp 1x,
+                        ./images/portfolio/img7_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img7_mob@1x.webp 1x,
+                        ./images/portfolio/img7_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/7-img.jpg"
+                      alt="Дизанерське видання"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -265,12 +490,42 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/project-img.jpg"
-                    alt="Проект Lab"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img8_desk@1x.webp 1x,
+                        ./images/portfolio/img8_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img8_tab@1x.webp 1x,
+                        ./images/portfolio/img8_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img8_mob@1x.webp 1x,
+                        ./images/portfolio/img8_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/8-img.jpg"
+                      alt="Проект Lab"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -289,12 +544,42 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/business-img.jpg"
-                    alt="Бізнес"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop screen  -->
+                    <source
+                      media="(min-width:1200px )"
+                      srcset="
+                        ./images/portfolio/img9_desk@1x.webp 1x,
+                        ./images/portfolio/img9_desk@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- tablet screen  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img9_tab@1x.webp 1x,
+                        ./images/portfolio/img9_tab@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <!-- phone screen  -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img9_mob@1x.webp 1x,
+                        ./images/portfolio/img9_mob@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      src="./images/portfolio/9-img.jpg"
+                      alt="Бізнес"
+                      width="370"
+                      height="294"
+                    />
+                  </picture>
+
                   <div class="portfolio__overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -318,8 +603,8 @@
     <footer class="footer">
       <div class="container footer__group">
         <div class="footer__address">
-          <a class="logo logo__footer link" href="./index.html"
-            >Web<span class="logo__footer-item">Studio</span></a
+          <a class="logo footer__logo link" href="./index.html"
+            >Web<span class="footer__logo-item">Studio</span></a
           >
           <address class="address">
             <ul class="footer__nav list">
@@ -421,5 +706,91 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile menu  -->
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg
+          class="menu__close-icon"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <use href="./images/icons.svg#icon-menu-close-icon"></use>
+        </svg>
+      </button>
+
+      <ul class="menu__mobile list">
+        <li class="menu__mobile-item">
+          <a href="./index.html" class="menu__mobile-link link">Студія</a>
+        </li>
+        <li class="menu__mobile-item">
+          <a href="" class="menu__mobile-link link">Портфоліо</a>
+        </li>
+        <li class="menu__mobile-item">
+          <a href="" class="menu__mobile-link link">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="menu__auth list">
+        <li>
+          <a href="tel:+380961111111" class="menu__auth-tel link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="menu__auth-mail link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="menu__socials list">
+        <li class="menu__socials-item">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="menu__socials-link link"
+            >Instagram</a
+          >
+        </li>
+        <li class="menu__socials-item">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="menu__socials-link link"
+            >Twitter</a
+          >
+        </li>
+        <li class="menu__socials-item">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="menu__socials-link link"
+            >Facebook</a
+          >
+        </li>
+        <li class="menu__socials-item">
+          <a
+            href="https://ua.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="menu__socials-link link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- mobile menu script  -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

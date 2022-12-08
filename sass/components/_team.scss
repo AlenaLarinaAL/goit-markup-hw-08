@@ -1,24 +1,49 @@
 .team__section {
+  @extend %section;
   background: var(--team-section-bg-color);
   text-align: center;
-  padding-bottom: 94px;
 }
 .team .team__member:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
 .team {
-  display: flex;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 .team__member {
+  margin-bottom: 30px;
   background: var(--team-members-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px){
+    margin-bottom: 0;
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
 }
 .team__item {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__list {

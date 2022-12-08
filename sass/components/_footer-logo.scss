@@ -1,8 +1,11 @@
-.logo__footer {
+.footer__logo {
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }
 }
-.logo__footer-item {
+.footer__logo-item {
   color: var(--logo-footer-color);
-  letter-spacing: 0.03em;
 }
