@@ -1540,11 +1540,6 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-@media screen and (max-width: 479px) {
-  .menu__socials-item:last-child {
-    display: none;
-  }
-}
 
 .menu__socials-item:not(:last-child):after {
   content: "";
@@ -1552,4 +1547,9 @@ img {
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
+}
+@media screen and (max-width: 479px) {
+  .menu__socials-item:not(:last-child):after {
+    height: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

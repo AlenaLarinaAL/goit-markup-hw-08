@@ -152,16 +152,21 @@
 .menu__socials-item {
   display: inline-flex;
 
-  &:last-child{
-    @media screen and (max-width: 479px) {
-      display: none;
-    }
-  }
+  // &:last-child{
+  //   @media screen and (max-width: 479px) {
+  //     display: none;
+  //   }
+  // }
 }
 
 .menu__socials-item:not(:last-child):after {
+  
   content: "";
   height: 22px;
+
+  @media screen and (max-width: 479px){
+   height: 16px;
+  }
   width: 1px;
   background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
