@@ -1496,10 +1496,16 @@ img {
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
+  font-size: 28px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .menu__auth-tel {
+    font-size: 34px;
+    line-height: 1.1764705882;
+  }
 }
 
 .menu__socials {
@@ -1517,16 +1523,27 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 14px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .menu__socials-link {
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 
 .menu__socials-item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+@media screen and (max-width: 479px) {
+  .menu__socials-item:last-child {
+    display: none;
+  }
 }
 
 .menu__socials-item:not(:last-child):after {
